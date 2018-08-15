@@ -1,5 +1,5 @@
 # micro-ERP
-
+![alt text](https://rawgit.com/grzesiekmq/micro-ERP/master/vue-erp.png)
 ## Project setup
 ```
 yarn install
