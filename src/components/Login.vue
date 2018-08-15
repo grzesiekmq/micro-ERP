@@ -2,23 +2,19 @@
     <div class="login">
         <v-card>
             <v-container>
-                <form>
-                    <span>
-            Username  
-            </span>
-                    <input type="text" name="username" id="username" required>
-                    <p></p>
-                    <span>
-                Password
-            </span>
-                    <input type="password" name="password" id="password" required>
-                    <p></p>
-                    <button type="submit">Login</button>
-                    <hr>
-                    <a href="#">
-                        <button type="button">Register</button>
-                    </a>
-                </form>
+                <v-form>
+                    <v-text-field v-model="username" label="Username" id="username" required>
+                    </v-text-field>
+                    <v-text-field v-model="password" label="Password" id="password" required>
+                    </v-text-field>
+                    <router-link to="/dashboard">
+                        <v-btn block>Dashboard</v-btn>
+                    </router-link>
+                    <v-divider></v-divider>
+                    <router-link to="/register">
+                        <v-btn block>Register</v-btn>
+                    </router-link>
+                </v-form>
             </v-container>
         </v-card>
     </div>
@@ -38,9 +34,7 @@ h3 {
 }
 
 
-a {
-    color: #42b983;
-}
+
 
 .login {
     margin: 0 auto;
